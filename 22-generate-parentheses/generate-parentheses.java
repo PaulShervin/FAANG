@@ -7,7 +7,7 @@ class Solution {
     }
     public void dfs(int open_bracket,int close_bracket,String str,int n,List<String> answer)
     {
-        if(open_bracket==close_bracket && open_bracket+close_bracket==n*2)
+        if(open_bracket==close_bracket && str.length()==n*2)
         {
             answer.add(str);
         }
